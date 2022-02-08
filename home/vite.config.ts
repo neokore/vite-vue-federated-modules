@@ -14,7 +14,7 @@ export default defineConfig({
       exposes: {
         './Main': './src/App.vue'
       },
-      shared: ['vue']
+      shared: ['vue', 'vue-router']
     })
   ],
   resolve: {

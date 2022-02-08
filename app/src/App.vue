@@ -7,17 +7,17 @@ import { RouterLink, RouterView } from 'vue-router';
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HomeContent />
-      <h2>Featuring federated modules</h2>
+      <h2>Featuring federated modules!!!</h2>
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink :to="{ name: 'home' }">Home</RouterLink>
+        <RouterLink :to="{ name: 'about' }">About</RouterLink>
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  <div class="content">
+    <RouterView />
+  </div>
 </template>
 
 <style>
@@ -85,11 +85,11 @@ nav a:first-of-type {
     place-items: center;
   }
 
-  #app {
+  /* #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
-  }
+  } */
 
   header {
     display: flex;

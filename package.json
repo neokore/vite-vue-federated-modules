@@ -13,7 +13,7 @@
     "dev": "concurrently -n home-build,home-server,app -c \"bgBlue.white.bold,bgBlue.white.bold,bgRed.white.bold\" \"npm run build --workspace=home -- --watch\" \"npm run preview --workspace=home\" \"npm run dev --workspace=app\"",
     "build": "npm run build --workspaces --if-present",
     "preview": "concurrently -n home,app -c \"bgBlue.white.bold,bgRed.white.bold\" \"npm run preview --workspace=home\" \"npm run preview --workspace=app\"",
-    "stop": "kill-port --port 5000,5001,5002,5003"
+    "stop": "kill-port --port 5000,5001"
   },
   "devDependencies": {
     "concurrently": "^6.1.0",

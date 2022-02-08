@@ -19,7 +19,7 @@ export default defineConfig({
       remotes: {
         home: 'http://localhost:5001/assets/remoteEntry.js'
       },
-      shared: ['vue']
+      shared: ['vue', 'vue-router']
     })
   ],
   resolve: {
