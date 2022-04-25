@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import { defineAsyncComponent } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -9,7 +8,7 @@ const router = createRouter({
       path: '/home',
       name: 'home',
       // @ts-ignore
-      component: /*defineAsyncComponent(*/() => import('home/Main')/*)*/,
+      component: () => import('home/Main'),
       props: {
         basePath: '/home'
       }

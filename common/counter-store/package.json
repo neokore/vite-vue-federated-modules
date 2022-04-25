@@ -1,17 +1,17 @@
 {
-  "name": "app",
+  "name": "counter-store",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --port 5000 --strictPort",
+    "dev": "vite --port 5002 --strictPort",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview  --port 5000 --strictPort",
+    "build:debug": "vue-tsc --noEmit && vite build --sourcemap --watch",
+    "preview": "vite preview --port 5002 --strictPort",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "pinia": "^2.0.11",
-    "vue": "^3.2.27",
-    "vue-router": "^4.0.12"
+    "vue": "^3.2.27"
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.1.3",
